@@ -95,83 +95,10 @@ function Home() {
 
   return (
     <div>
-      <ul> 
-        {/* CASE 1 AND 2 */}
-        {/* {data.map((item, index) => (
-          (showMore > index) && (
-            <div key={item.id} class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-              <div class="md:flex">
-                <div class="p-8">
-                  <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{item.category}</div>
-                  <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{item.title}</a>
-                  <p class="mt-2 text-gray-500">{item.description}</p>
-                  <p class="mt-2 text-gray-500 font-bold">${item.price}</p>
-                  <div class="flex mt-3">
-                    <p class="mr-2 text-gray-700">Rating:</p>
-                    <p class="text-gray-700">{item.rating.rate}</p>
-                    <p class="mx-2 text-gray-700">(<span>{item.rating.count}</span> reviews)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )
-        ))} */}
-
-        {/* CASE 3 */}
-       {/* { data.slice(SI, EI).map((item, index) => (
-          <div key={item.id} class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="md:flex">
-            <div class="p-8">
-              <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{item.category}</div>
-              <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{item.title}</a>
-              <p class="mt-2 text-gray-500">{item.description}</p>
-              <p class="mt-2 text-gray-500 font-bold">${item.price}</p>
-              <div class="flex mt-3">
-                <p class="mr-2 text-gray-700">Rating:</p>
-                <p class="text-gray-700">{item.rating.rate}</p>
-                <p class="mx-2 text-gray-700">(<span>{item.rating.count}</span> reviews)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        ))} */}
-
-
-      </ul>
-      {/* CASE 1 2 3*/}
-      <button type="button" name="less" onClick={show} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
-        Show Less
-      </button>
-      <button type="button" name="more" onClick={show} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Show More
-      </button>
-
-      {/* CASE 3 */}
-      <div className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
-        PAGE NO : {pageNo}
-      </div>
-
+      Home Page Plz goto /apiData or /normalData
     </div>
   );
 }
 
 export default Home;
 
-{/* CASE 1 */ }
-{/* {data.map((item, index) => (
-          (showMore > index) && <li key={item.id}>
-            Name: {item.name}, Age: {item.age}, Index: {index + SI}
-          </li>
-        ))} */}
-{/* CASE 2 */ }
-{/* {data.map((item, index) => (
-          (showMore > index) && <li key={item.id}>
-            Name: {item.name}, Age: {item.age}, Index: {index + SI}
-          </li>
-        ))} */}
-{/* CASE 3 */ }
-{/* {data.slice(SI, EI).map((item, index) => (
-          <li key={item.id}>
-            Name: {item.name}, Age: {item.age}, Index: {index + SI}
-          </li>
-        ))} */}
